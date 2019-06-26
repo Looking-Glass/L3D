@@ -11,8 +11,6 @@
 #define INTERNET_BUTTON D2
 #define MODE D3
 
-#define STREAMING_PORT 2222
-
 /**   An RGB color. */
 struct Color
 {
@@ -43,9 +41,6 @@ class Cube
     bool lastOnline;
     Adafruit_NeoPixel strip;
     int lastUpdated;
-    char localIP[24];
-    char macAddress[20];
-    int port;
     void emptyFlatCircle(int x, int y, int z, int r, Color col);
 
   public:

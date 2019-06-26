@@ -33,11 +33,7 @@ Cube::Cube() : \
 
 /** Initialization of cube resources and environment. */
 void Cube::begin(void) {
-  // initialize Spark variables
-  int (Cube::*setPort)(String) = &Cube::setPort;
-
-  this->initButtons();
-
+  this->strip.begin();
 }
 
 /** Set a voxel at a position to a color.
