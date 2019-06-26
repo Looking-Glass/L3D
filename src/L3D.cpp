@@ -1,7 +1,7 @@
 #include <math.h>
 #include "L3D.h"
 
-SYSTEM_MODE(SEMI_AUTOMATIC);
+SYSTEM_THREAD(ENABLED);
 
 /** Construct a new cube.
   @param s Size of one side of the cube in number of LEDs.
