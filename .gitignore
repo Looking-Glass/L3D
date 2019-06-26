@@ -1,0 +1,11 @@
+# build files
+obj/
+bin/
+
+# Vim swap files
+*.swp
+*.swo
+
+*~
+*#
+#*
