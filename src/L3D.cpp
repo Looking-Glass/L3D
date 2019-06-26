@@ -197,9 +197,9 @@ void Cube::line(Point p1, Point p2, Color col)
   */
 void Cube::sphere(int x, int y, int z, int r, Color col)
 {
-  for(int dx = -r; dx <= r; dx++) {
-    for(int dy = -r; dy <= r; dy++) {
-      for(int dz = -r; dz <= r; dz++) {
+  for(float dx = -r; dx <= r; dx++) {
+    for(float dy = -r; dy <= r; dy++) {
+      for(float dz = -r; dz <= r; dz++) {
         if(sqrt(dx*dx + dy*dy + dz*dz) <= r) {
           setVoxel(x + dx, y + dy, z + dz, col);
         }
@@ -230,9 +230,9 @@ void Cube::sphere(Point p, int r, Color col)
 void Cube::shell(float x, float y,float z, float r, Color col)
 {
   float thickness =0.1;
-  for(int i=0;i<size;i++)
-    for(int j=0;j<size;j++)
-      for(int k=0;k<size;k++)
+  for(float i=0;i<size;i++)
+    for(float j=0;j<size;j++)
+      for(float k=0;k<size;k++)
 	if(abs(sqrt(pow(i-x,2)+pow(j-y,2)+pow(k-z,2))-r)<thickness)
 	  setVoxel(i,j,k,col);
 }
@@ -248,9 +248,9 @@ void Cube::shell(float x, float y,float z, float r, Color col)
 */
 void Cube::shell(float x, float y,float z, float r, float thickness, Color col)
 {
-  for(int i=0;i<size;i++)
-    for(int j=0;j<size;j++)
-      for(int k=0;k<size;k++)
+  for(float i=0;i<size;i++)
+    for(float j=0;j<size;j++)
+      for(float k=0;k<size;k++)
 	if(abs(sqrt(pow(i-x,2)+pow(j-y,2)+pow(k-z,2))-r)<thickness)
 	  setVoxel(i,j,k,col);
 }
