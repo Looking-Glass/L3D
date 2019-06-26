@@ -1,8 +1,8 @@
-#include "application.h"
-#include "neopixel.h"
-
 #ifndef _L3D_H
 #define _L3D_H
+
+#include "application.h"
+#include "neopixel.h"
 
 #define PIXEL_COUNT 512
 #define PIXEL_PIN D0
