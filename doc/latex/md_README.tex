@@ -1,0 +1,62 @@
+A Particle library for L3D
+
+\subsection*{Welcome to your library!}
+
+To get started, modify the sources in \mbox{[}src\mbox{]}(src). Rename the example folder inside \mbox{[}examples\mbox{]}(examples) to a more meaningful name and add additional examples in separate folders.
+
+To compile your example you can use {\ttfamily particle compile examples/usage} command in \href{https://docs.particle.io/guide/tools-and-features/cli\#update-your-device-remotely}{\texttt{ Particle C\+LI}} or use our \href{https://docs.particle.io/guide/tools-and-features/dev/\#compiling-code}{\texttt{ Desktop I\+DE}}.
+
+Libraries can also depend on other libraries. To add a dependency use \href{https://docs.particle.io/guide/tools-and-features/cli\#adding-a-library}{\texttt{ {\ttfamily particle library add}}} or \href{https://docs.particle.io/guide/tools-and-features/dev/\#managing-libraries}{\texttt{ library management}} in Desktop I\+DE.
+
+After the library is done you can upload it with {\ttfamily particle library upload} or {\ttfamily Upload} command in the I\+DE. This will create a private (only visible by you) library that you can use in other projects. If you wish to make your library public, use {\ttfamily particle library publish} or {\ttfamily Publish} command.
+
+{\itshape T\+O\+DO\+: update this R\+E\+A\+D\+ME}
+
+\subsection*{Usage}
+
+Connect X\+YZ hardware, add the L3D library to your project and follow this simple example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#include "L3D.h"}
+\DoxyCodeLine{L3D l3D;}
+\DoxyCodeLine{}
+\DoxyCodeLine{void setup() \{}
+\DoxyCodeLine{  l3D.begin();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{void loop() \{}
+\DoxyCodeLine{  l3D.process();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+See the \mbox{[}examples\mbox{]}(examples) folder for more details.
+
+\subsection*{Documentation}
+
+T\+O\+DO\+: Describe {\ttfamily L3D}
+
+\subsection*{Contributing}
+
+Here\textquotesingle{}s how you can make changes to this library and eventually contribute those changes back.
+
+To get started, \href{https://help.github.com/articles/cloning-a-repository/}{\texttt{ clone the library from Git\+Hub to your local machine}}.
+
+Change the name of the library in {\ttfamily library.\+properties} to something different. You can add your name at then end.
+
+Modify the sources in $<$src$>$ and $<$examples$>$ with the new behavior.
+
+To compile an example, use {\ttfamily particle compile examples/usage} command in \href{https://docs.particle.io/guide/tools-and-features/cli\#update-your-device-remotely}{\texttt{ Particle C\+LI}} or use our \href{https://docs.particle.io/guide/tools-and-features/dev/\#compiling-code}{\texttt{ Desktop I\+DE}}.
+
+After your changes are done you can upload them with {\ttfamily particle library upload} or {\ttfamily Upload} command in the I\+DE. This will create a private (only visible by you) library that you can use in other projects. Do {\ttfamily particle library add L3\+D\+\_\+myname} to add the library to a project on your machine or add the L3\+D\+\_\+myname library to a project on the Web I\+DE or Desktop I\+DE.
+
+At this point, you can create a \href{https://help.github.com/articles/about-pull-requests/}{\texttt{ Git\+Hub pull request}} with your changes to the original library.
+
+If you wish to make your library public, use {\ttfamily particle library publish} or {\ttfamily Publish} command.
+
+\subsection*{L\+I\+C\+E\+N\+SE}
+
+Copyright 2019 Alex Hornstein \href{mailto:alex@lookingglassfactory.com}{\texttt{ alex@lookingglassfactory.\+com}}
+
+Licensed under the $<$insert your=\char`\"{}\char`\"{} choice=\char`\"{}\char`\"{} of=\char`\"{}\char`\"{} license=\char`\"{}\char`\"{} here$>$=\char`\"{}\char`\"{}$>$ license 

@@ -1,0 +1,430 @@
+\hypertarget{classCube}{}\section{Cube Class Reference}
+\label{classCube}\index{Cube@{Cube}}
+
+
+An L3D L\+ED cube.  
+
+
+
+
+{\ttfamily \#include $<$L3\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCube_a3ac832a5fc2640677703e9e47d5f4e3a}{Cube}} (unsigned int s, unsigned int mb)
+\begin{DoxyCompactList}\small\item\em Construct a new cube. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCube_ac51192b04110f845ae10597bc0721716}{Cube}} (void)
+\begin{DoxyCompactList}\small\item\em Construct a new cube with default settings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_a96c7255f2375201299eb36362be43e94}{set\+Voxel}} (int x, int y, int z, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Set a voxel at a position to a color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_a3e03c0b62ec4e3bad49ca108b68934ba}{set\+Voxel}} (\mbox{\hyperlink{structPoint}{Point}} p, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Set a voxel at a position to a color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCube_ad8ae2126ecb22403169ae1e577d1d011}{get\+Voxel}} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Get the color of a voxel at a position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCube_a975fe9a893595160a1726612b1c57717}{get\+Voxel}} (\mbox{\hyperlink{structPoint}{Point}} p)
+\begin{DoxyCompactList}\small\item\em Get the color of a voxel at a position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_ade358055f1da9f4bc5d577c841696c4e}{line}} (int x1, int y1, int z1, int x2, int y2, int z2, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Draw a line in 3D space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_a1ba4010e9d87479da5a340bddbcbf622}{line}} (\mbox{\hyperlink{structPoint}{Point}} p1, \mbox{\hyperlink{structPoint}{Point}} p2, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Draw a line in 3D space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_a1e67b5e360c10bae9f58bd4b09b980a1}{sphere}} (int x, int y, int z, int r, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Draw a filled sphere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_af9f95704e15b96cc682e58e8e251525a}{sphere}} (\mbox{\hyperlink{structPoint}{Point}} p, int r, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Draw a filled sphere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_a3bdcd1e0615a67aa2dbaf44c33714da0}{shell}} (float x, float y, float z, float r, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Draw a shell (empty sphere). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_a99a38e0467482c71881f05d281f08aba}{shell}} (float x, float y, float z, float r, float thickness, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Draw a shell (empty sphere). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_a6dcd43391777dcdc25e204f9b50173f1}{shell}} (\mbox{\hyperlink{structPoint}{Point}} p, float r, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Draw a shell (empty sphere). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_a14c1110798f338670a998464017df23f}{shell}} (\mbox{\hyperlink{structPoint}{Point}} p, float r, float thickness, \mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Draw a shell (empty sphere). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_af2bb71def4d2a272c794efbfab1ab586}{background}} (\mbox{\hyperlink{structColor}{Color}} col)
+\begin{DoxyCompactList}\small\item\em Set the entire cube to one color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCube_a8bc792506ab5f7f55fa66a69e1be5255}{color\+Map}} (float val, float min, float max)
+\begin{DoxyCompactList}\small\item\em Map a value into a color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structColor}{Color}} \mbox{\hyperlink{classCube_ab9d5f5ea67787fc718c74a4786491d36}{lerp\+Color}} (\mbox{\hyperlink{structColor}{Color}} a, \mbox{\hyperlink{structColor}{Color}} b, int val, int min, int max)
+\begin{DoxyCompactList}\small\item\em Linear interpolation between colors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_a2089481fa538bf1514acf8d8ac0bc500}{begin}} (void)
+\begin{DoxyCompactList}\small\item\em Initialization of cube resources and environment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCube_aa3f200e7c7ae119b0df57425b9f07f33}{show}} (void)
+\begin{DoxyCompactList}\small\item\em Make changes to the cube visible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCube_a0b22d70154fa77b63777659a8751b799}\label{classCube_a0b22d70154fa77b63777659a8751b799}} 
+int {\bfseries size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An L3D L\+ED cube. 
+
+Provides methods for drawing in 3D. Controls the L\+ED hardware. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCube_a3ac832a5fc2640677703e9e47d5f4e3a}\label{classCube_a3ac832a5fc2640677703e9e47d5f4e3a}} 
+\index{Cube@{Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{Cube()}{Cube()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cube\+::\+Cube (\begin{DoxyParamCaption}\item[{unsigned int}]{s,  }\item[{unsigned int}]{mb }\end{DoxyParamCaption})}
+
+
+
+Construct a new cube. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Size of one side of the cube in number of L\+E\+Ds. \\
+\hline
+{\em mb} & Maximum brightness value. Used to prevent the L\+E\+Ds from drawing too much current (which causes the colors to distort).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classCube}{Cube}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCube_ac51192b04110f845ae10597bc0721716}\label{classCube_ac51192b04110f845ae10597bc0721716}} 
+\index{Cube@{Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{Cube()}{Cube()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cube\+::\+Cube (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new cube with default settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Size of one side of the cube in number of L\+E\+Ds. \\
+\hline
+{\em mb} & Maximum brightness value. Used to prevent the L\+E\+Ds from drawing too much current (which causes the colors to distort).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classCube}{Cube}} object. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCube_af2bb71def4d2a272c794efbfab1ab586}\label{classCube_af2bb71def4d2a272c794efbfab1ab586}} 
+\index{Cube@{Cube}!background@{background}}
+\index{background@{background}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{background()}{background()}}
+{\footnotesize\ttfamily void Cube\+::background (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Set the entire cube to one color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & The color to set all L\+E\+Ds in the cube to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_a2089481fa538bf1514acf8d8ac0bc500}\label{classCube_a2089481fa538bf1514acf8d8ac0bc500}} 
+\index{Cube@{Cube}!begin@{begin}}
+\index{begin@{begin}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Cube\+::begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialization of cube resources and environment. 
+
+\mbox{\Hypertarget{classCube_a8bc792506ab5f7f55fa66a69e1be5255}\label{classCube_a8bc792506ab5f7f55fa66a69e1be5255}} 
+\index{Cube@{Cube}!colorMap@{colorMap}}
+\index{colorMap@{colorMap}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{colorMap()}{colorMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Cube\+::color\+Map (\begin{DoxyParamCaption}\item[{float}]{val,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})}
+
+
+
+Map a value into a color. 
+
+The set of colors fades from blue to green to red and back again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Value to map into a color. \\
+\hline
+{\em min} & Minimum value that val will take. \\
+\hline
+{\em max} & Maximum value that val will take.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structColor}{Color}} from value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCube_ad8ae2126ecb22403169ae1e577d1d011}\label{classCube_ad8ae2126ecb22403169ae1e577d1d011}} 
+\index{Cube@{Cube}!getVoxel@{getVoxel}}
+\index{getVoxel@{getVoxel}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{getVoxel()}{getVoxel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Cube\+::get\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+
+
+Get the color of a voxel at a position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y,z} & Coordinate of the L\+ED to get the color from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_a975fe9a893595160a1726612b1c57717}\label{classCube_a975fe9a893595160a1726612b1c57717}} 
+\index{Cube@{Cube}!getVoxel@{getVoxel}}
+\index{getVoxel@{getVoxel}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{getVoxel()}{getVoxel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Cube\+::get\+Voxel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Get the color of a voxel at a position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Coordinate of the L\+ED to get the color from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_ab9d5f5ea67787fc718c74a4786491d36}\label{classCube_ab9d5f5ea67787fc718c74a4786491d36}} 
+\index{Cube@{Cube}!lerpColor@{lerpColor}}
+\index{lerpColor@{lerpColor}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{lerpColor()}{lerpColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structColor}{Color}} Cube\+::lerp\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structColor}{Color}}}]{a,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{b,  }\item[{int}]{val,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Linear interpolation between colors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a,b} & The colors to interpolate between. \\
+\hline
+{\em val} & Position on the line between color a and color b. When equal to min the output is color a, and when equal to max the output is color b. \\
+\hline
+{\em min} & Minimum value that val will take. \\
+\hline
+{\em max} & Maximum value that val will take.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structColor}{Color}} between colors a and b. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCube_ade358055f1da9f4bc5d577c841696c4e}\label{classCube_ade358055f1da9f4bc5d577c841696c4e}} 
+\index{Cube@{Cube}!line@{line}}
+\index{line@{line}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{line()}{line()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Cube\+::line (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{z1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{z2,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Draw a line in 3D space. 
+
+Uses the 3D form of Bresenham\textquotesingle{}s algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1,y1,z1} & Coordinate of start of line. \\
+\hline
+{\em x2,y2,z2} & Coordinate of end of line. \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} of the line. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_a1ba4010e9d87479da5a340bddbcbf622}\label{classCube_a1ba4010e9d87479da5a340bddbcbf622}} 
+\index{Cube@{Cube}!line@{line}}
+\index{line@{line}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{line()}{line()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Cube\+::line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{p1,  }\item[{\mbox{\hyperlink{structPoint}{Point}}}]{p2,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Draw a line in 3D space. 
+
+Uses the 3D form of Bresenham\textquotesingle{}s algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Coordinate of start of line. \\
+\hline
+{\em p2} & Coordinate of end of line. \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} of the line. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_a96c7255f2375201299eb36362be43e94}\label{classCube_a96c7255f2375201299eb36362be43e94}} 
+\index{Cube@{Cube}!setVoxel@{setVoxel}}
+\index{setVoxel@{setVoxel}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{setVoxel()}{setVoxel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Cube\+::set\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Set a voxel at a position to a color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y,z} & Coordinate of the L\+ED to set. \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} to set the L\+ED to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_a3e03c0b62ec4e3bad49ca108b68934ba}\label{classCube_a3e03c0b62ec4e3bad49ca108b68934ba}} 
+\index{Cube@{Cube}!setVoxel@{setVoxel}}
+\index{setVoxel@{setVoxel}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{setVoxel()}{setVoxel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Cube\+::set\+Voxel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{p,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Set a voxel at a position to a color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Coordinate of the L\+ED to set. \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} to set the L\+ED to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_a3bdcd1e0615a67aa2dbaf44c33714da0}\label{classCube_a3bdcd1e0615a67aa2dbaf44c33714da0}} 
+\index{Cube@{Cube}!shell@{shell}}
+\index{shell@{shell}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{shell()}{shell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Cube\+::shell (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{r,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Draw a shell (empty sphere). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position of the center of the shell. \\
+\hline
+{\em y} & Position of the center of the shell. \\
+\hline
+{\em z} & Position of the center of the shell. \\
+\hline
+{\em r} & Radius of the shell. \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} of the shell. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_a99a38e0467482c71881f05d281f08aba}\label{classCube_a99a38e0467482c71881f05d281f08aba}} 
+\index{Cube@{Cube}!shell@{shell}}
+\index{shell@{shell}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{shell()}{shell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Cube\+::shell (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{r,  }\item[{float}]{thickness,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Draw a shell (empty sphere). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position of the center of the shell. \\
+\hline
+{\em y} & Position of the center of the shell. \\
+\hline
+{\em z} & Position of the center of the shell. \\
+\hline
+{\em r} & Radius of the shell. \\
+\hline
+{\em thickness} & Thickness of the shell. \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} of the shell. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_a6dcd43391777dcdc25e204f9b50173f1}\label{classCube_a6dcd43391777dcdc25e204f9b50173f1}} 
+\index{Cube@{Cube}!shell@{shell}}
+\index{shell@{shell}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{shell()}{shell()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Cube\+::shell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{p,  }\item[{float}]{r,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Draw a shell (empty sphere). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Position of the center of the shell. \\
+\hline
+{\em r} & Radius of the shell. \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} of the shell. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_a14c1110798f338670a998464017df23f}\label{classCube_a14c1110798f338670a998464017df23f}} 
+\index{Cube@{Cube}!shell@{shell}}
+\index{shell@{shell}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{shell()}{shell()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Cube\+::shell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{p,  }\item[{float}]{r,  }\item[{float}]{thickness,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Draw a shell (empty sphere). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Position of the center of the shell. \\
+\hline
+{\em r} & Radius of the shell. \\
+\hline
+{\em thickness} & Thickness of the shell \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} of the shell. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_aa3f200e7c7ae119b0df57425b9f07f33}\label{classCube_aa3f200e7c7ae119b0df57425b9f07f33}} 
+\index{Cube@{Cube}!show@{show}}
+\index{show@{show}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Cube\+::show (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Make changes to the cube visible. 
+
+Causes pixel data to be written to the L\+ED strips. \mbox{\Hypertarget{classCube_a1e67b5e360c10bae9f58bd4b09b980a1}\label{classCube_a1e67b5e360c10bae9f58bd4b09b980a1}} 
+\index{Cube@{Cube}!sphere@{sphere}}
+\index{sphere@{sphere}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{sphere()}{sphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Cube\+::sphere (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z,  }\item[{int}]{r,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Draw a filled sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y,z} & Position of the center of the sphere. \\
+\hline
+{\em r} & Radius of the sphere. \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} of the sphere. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCube_af9f95704e15b96cc682e58e8e251525a}\label{classCube_af9f95704e15b96cc682e58e8e251525a}} 
+\index{Cube@{Cube}!sphere@{sphere}}
+\index{sphere@{sphere}!Cube@{Cube}}
+\subsubsection{\texorpdfstring{sphere()}{sphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Cube\+::sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPoint}{Point}}}]{p,  }\item[{int}]{r,  }\item[{\mbox{\hyperlink{structColor}{Color}}}]{col }\end{DoxyParamCaption})}
+
+
+
+Draw a filled sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Position of the center of the sphere. \\
+\hline
+{\em r} & Radius of the sphere. \\
+\hline
+{\em col} & \mbox{\hyperlink{structColor}{Color}} of the sphere. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/L3\+D.\+h\item 
+src/L3\+D.\+cpp\end{DoxyCompactItemize}
